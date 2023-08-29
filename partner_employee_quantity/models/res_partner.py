@@ -9,7 +9,7 @@ from odoo import fields, models
 class ResPartner(models.Model):
     _inherit = "res.partner"
 
-    employee_quantity = fields.Integer()
+    employee_quantity = fields.Integer(string="Employee quantity")
     employee_quantity_range_id = fields.Many2one(
         comodel_name="res.partner.employee_quantity_range",
         string="Employee quantity range",
